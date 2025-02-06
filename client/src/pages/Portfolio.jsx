@@ -1,6 +1,6 @@
 import React from "react";
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaGithub, FaJava } from "react-icons/fa";
-import { motion } from "framer-motion";
+import ReversedInfiniteSlider from "../components/ReversedInfiniteSlider";
 import InfiniteSlider from "../components/InfiniteSlider";
 
 const technologies = [
@@ -44,11 +44,7 @@ const Portfolio = () => {
       <div className="text-center my-5">
         <p>Find me on <a href="#" className="text-blue-500">LinkedIn</a> & <a href="#" className="text-blue-500">GitHub</a></p>
       </div>
-      <motion.div className="overflow-hidden whitespace-nowrap py-3 bg-gray-700">
-        <motion.div className="flex gap-10" animate={{ x: [0, 300] }} transition={{ repeat: Infinity, duration: 5 }}>
-          {technologies.map((tech, index) => <div key={index} className="flex items-center gap-2">{tech.icon}{tech.name}</div>)}
-        </motion.div>
-      </motion.div>
+      <ReversedInfiniteSlider />
       
       {/* Projects Section */}
       <section id="projects" className="p-10">
