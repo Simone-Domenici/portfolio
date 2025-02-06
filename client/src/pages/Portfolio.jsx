@@ -1,17 +1,7 @@
 import React from "react";
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaGithub, FaJava } from "react-icons/fa";
 import ReversedInfiniteSlider from "../components/ReversedInfiniteSlider";
 import InfiniteSlider from "../components/InfiniteSlider";
 
-const technologies = [
-  { icon: <FaReact size={40} />, name: "React" },
-  { icon: <FaNodeJs size={40} />, name: "Node.js" },
-  { icon: <FaHtml5 size={40} />, name: "HTML5" },
-  { icon: <FaCss3Alt size={40} />, name: "CSS3" },
-  { icon: <FaJs size={40} />, name: "JavaScript" },
-  { icon: <FaGithub size={40} />, name: "GitHub" },
-  { icon: <FaJava size={40} />, name: "Java" },
-];
 
 const Portfolio = () => {
   return (
@@ -41,8 +31,16 @@ const Portfolio = () => {
       <InfiniteSlider />
       
       {/* Contact Section */}
-      <div className="text-center my-5">
-        <p>Find me on <a href="#" className="text-blue-500">LinkedIn</a> & <a href="#" className="text-blue-500">GitHub</a></p>
+      <div className="text-center mt-5 mb-15">
+      <section id="contact" className="text-center my-5 p-5 bg-gray-800 rounded-lg shadow-md">
+        <h2 className="text-3xl font-bold">About Me</h2>
+        <p className="text-gray-400 px-50 text-xl mt-3">
+          Hi, I'm Simone Domenici, a passionate Full-Stack Web Developer from Rome. I love anime and video games, and my ultimate goal is to become a Game Developer. I'm constantly learning new technologies beyond web development to bring my ideas to life in the gaming world.
+        </p>
+        <p className="text-gray-400 mt-5">
+          Find me on <a href="#" className="text-blue-500 hover:underline">LinkedIn</a> or <a href="#" className="text-blue-500 hover:underline">GitHub</a>, or reach out via <a href="mailto:your.email@example.com" className="text-blue-500 hover:underline">email</a>.
+        </p>
+      </section>
       </div>
       <ReversedInfiniteSlider />
       
@@ -58,7 +56,7 @@ const Portfolio = () => {
       
       {/* Footer */}
       <footer className="bg-gray-800 text-center py-5 mt-5">
-        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+        <p>&copy; 2025 KuroNoKenshi.dev. All Rights Reserved.</p>
       </footer>
     </div>
   );
