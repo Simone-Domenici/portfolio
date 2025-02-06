@@ -1,6 +1,7 @@
 import React from "react";
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaGithub } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaGithub, FaJava } from "react-icons/fa";
 import { motion } from "framer-motion";
+import InfiniteSlider from "../components/InfiniteSlider";
 
 const technologies = [
   { icon: <FaReact size={40} />, name: "React" },
@@ -9,6 +10,7 @@ const technologies = [
   { icon: <FaCss3Alt size={40} />, name: "CSS3" },
   { icon: <FaJs size={40} />, name: "JavaScript" },
   { icon: <FaGithub size={40} />, name: "GitHub" },
+  { icon: <FaJava size={40} />, name: "Java" },
 ];
 
 const Portfolio = () => {
@@ -32,15 +34,13 @@ const Portfolio = () => {
           <p className="text-gray-400 mt-3">I build modern and performant web applications.</p>
           <button className="mt-5 px-6 py-2 bg-blue-600 hover:bg-blue-500 rounded">Contact Me</button>
         </div>
-        <img src="/profile.jpg" alt="Profile" className="w-60 rounded-full" />
+        <img src="https://github.com/Simone-Domenici/portfolio/blob/main/client/src/img/profile.jpeg" className="w-60 rounded-full" />
       </section>
-      
+
       {/* Technology Sliders */}
-      <motion.div className="overflow-hidden whitespace-nowrap py-3 bg-gray-700">
-        <motion.div className="flex gap-10" animate={{ x: [0, -300] }} transition={{ repeat: Infinity, duration: 5 }}>
-          {technologies.map((tech, index) => <div key={index} className="flex items-center gap-2">{tech.icon}{tech.name}</div>)}
-        </motion.div>
-      </motion.div>
+      <InfiniteSlider />
+      
+      {/* Contact Section */}
       <div className="text-center my-5">
         <p>Find me on <a href="#" className="text-blue-500">LinkedIn</a> & <a href="#" className="text-blue-500">GitHub</a></p>
       </div>
