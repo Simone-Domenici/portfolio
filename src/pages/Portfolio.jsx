@@ -1,6 +1,7 @@
 import React from "react";
 import ReversedInfiniteSlider from "../components/ReversedInfiniteSlider";
 import InfiniteSlider from "../components/InfiniteSlider";
+import logo from "../assets/KnK_Logo.svg";
 
 
 const Portfolio = () => {
@@ -56,7 +57,7 @@ const Portfolio = () => {
       
       {/* Footer */}
       <footer className="bg-gray-800 text-center pb-5 mt-5 flex justify-center flex-col">
-        <img className="h-30 text-center" src="public\img\KnK_Logo.svg" alt="Logo" />
+        <img className="h-30 text-center" src={logo} alt="Logo" />
         <p>&copy; 2025 KuroNoKenshi.dev. All Rights Reserved.</p>
       </footer>
     </div>
