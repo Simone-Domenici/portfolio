@@ -58,7 +58,7 @@
     display: flex;
     width: calc(150px * 16);
     /* Larghezza totale della pista */
-    animation: scroll 20s linear infinite;
+    animation: scroll 30s linear infinite;
     /* Animazione di scorrimento */
 }
 
@@ -86,7 +86,7 @@
         /* Scorre a destra */
     }
     100% {
-        transform: translateX(calc(-150px * 8));
+        transform: translateX(calc(-150px * 14));
         /* Inizia da sinistra */
     }
 }
