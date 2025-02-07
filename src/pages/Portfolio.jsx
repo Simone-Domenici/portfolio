@@ -24,7 +24,7 @@ const Portfolio = () => {
           <p className="text-gray-400 mt-3">I build modern and performant web applications.</p>
           <button className="mt-5 px-6 py-2 bg-blue-600 hover:bg-blue-500 rounded">Contact Me</button>
         </div>
-        <img src="public\img\profile.jpeg" className="w-64  rounded-full" />
+        <img src="dist\img\profile.jpeg" className="w-64  rounded-full" />
       </section>
 
       {/* Technology Sliders */}
