@@ -34,7 +34,7 @@ const Portfolio = () => {
       <div className="text-center mt-5 mb-15">
       <section id="contact" className="text-center my-5 p-5 bg-gray-800 rounded-lg shadow-md">
         <h2 className="text-3xl font-bold">About Me</h2>
-        <p className="text-gray-400 px-50 text-xl mt-3">
+        <p className="text-gray-400 lg:px-50 text-xl mt-3">
           Hi, I'm Simone Domenici, a passionate Full-Stack Web Developer from Rome. I love anime and video games, and my ultimate goal is to become a Game Developer. I'm constantly learning new technologies beyond web development to bring my ideas to life in the gaming world.
         </p>
         <p className="text-gray-400 mt-5">
@@ -55,7 +55,8 @@ const Portfolio = () => {
       </section>
       
       {/* Footer */}
-      <footer className="bg-gray-800 text-center py-5 mt-5">
+      <footer className="bg-gray-800 text-center pb-5 mt-5 flex justify-center flex-col">
+        <img className="h-30 text-center" src="public\img\KnK_Logo.svg" alt="Logo" />
         <p>&copy; 2025 KuroNoKenshi.dev. All Rights Reserved.</p>
       </footer>
     </div>
