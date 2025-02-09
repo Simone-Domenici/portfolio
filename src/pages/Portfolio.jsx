@@ -9,7 +9,11 @@ const Portfolio = () => {
     <div className="bg-gray-900 text-white min-h-screen">
       {/* Header */}
       <header className="p-5 flex justify-between items-center bg-gray-800 shadow-md">
-        <h1 className="text-xl font-bold">KuroNoKenshi.dev</h1>
+        <a href="/"><div className="flex items-center">
+          <h1 className="text-xl font-bold">KuroNoKenshi.dev</h1>
+          <img className="w-15" src={logo} alt="Logo" />
+        </div>
+        </a>
         <nav>
           <ul className="flex gap-5">
             <li><a href="#projects" className="hover:text-gray-400">Projects</a></li>
@@ -17,7 +21,7 @@ const Portfolio = () => {
           </ul>
         </nav>
       </header>
-      
+
       {/* Hero Section */}
       <section className="flex flex-col md:flex-row items-center justify-center p-10 gap-10">
         <div className="text-center md:text-left">
@@ -30,31 +34,36 @@ const Portfolio = () => {
 
       {/* Technology Sliders */}
       <InfiniteSlider />
-      
+
       {/* Contact Section */}
       <div className="text-center mt-5 mb-15">
-      <section id="contact" className="text-center my-5 p-5 bg-gray-800 rounded-lg shadow-md">
-        <h2 className="text-3xl font-bold">About Me</h2>
-        <p className="text-gray-400 lg:px-50 text-xl mt-3">
-          Hi, I'm Simone Domenici, a passionate Full-Stack Web Developer from Rome. I love anime and video games, and my ultimate goal is to become a Game Developer. I'm constantly learning new technologies beyond web development to bring my ideas to life in the gaming world.
-        </p>
-        <p className="text-gray-400 mt-5">
-          Find me on <a href="#" className="text-blue-500 hover:underline">LinkedIn</a> or <a href="#" className="text-blue-500 hover:underline">GitHub</a>, or reach out via <a href="mailto:your.email@example.com" className="text-blue-500 hover:underline">email</a>.
-        </p>
-      </section>
+        <section id="contact" className="text-center my-5 p-5 bg-gray-800 rounded-lg shadow-md">
+          <h2 className="text-3xl font-bold">About Me</h2>
+          <p className="text-gray-400 lg:px-50 text-xl mt-3">
+            Hi, I'm Simone Domenici, a passionate Full-Stack Web Developer from Rome. I love anime and video games, and my ultimate goal is to become a Game Developer. I'm constantly learning new technologies beyond web development to bring my ideas to life in the gaming world.
+          </p>
+          <p className="text-gray-400 mt-5">
+            Find me on <a href="#" className="text-blue-500 hover:underline">LinkedIn</a> or <a href="https://github.com/Simone-Domenici" target="_blank" className="text-blue-500 hover:underline">GitHub</a>, or reach out via <a href="mailto:knkdev.business@gmail.com" className="text-blue-500 hover:underline">email</a>.
+          </p>
+        </section>
       </div>
       <ReversedInfiniteSlider />
-      
+
       {/* Projects Section */}
       <section id="projects" className="p-10">
         <h2 className="text-3xl font-bold text-center">My Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
-          <div className="bg-gray-800 p-5 rounded shadow-md">Project 1</div>
+          <a href="https://simone-domenici.github.io/randomizer" target="_blank">
+            <div className="bg-gray-800 p-5 rounded shadow-md">
+              <p className="pb-5 text-2xl text-center">Randomizer</p>
+              <img src="/portfolio/img/wheel.jpg" />
+            </div>
+          </a>
           <div className="bg-gray-800 p-5 rounded shadow-md">Project 2</div>
           <div className="bg-gray-800 p-5 rounded shadow-md">Project 3</div>
         </div>
       </section>
-      
+
       {/* Footer */}
       <footer className="bg-gray-800 text-center pb-5 mt-5 flex justify-center flex-col">
         <img className="h-30 text-center" src={logo} alt="Logo" />
